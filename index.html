@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>隆哥点击挂机游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>隆哥点击挂机游戏</h1>
+
+    <div id="resources">
+        <p>金币: <span id="gold">0</span></p>
+        <p>材料: <span id="materials">50</span></p>
+        <p>能量: <span id="energy">50</span></p>
+    </div>
+
+    <div id="click-section">
+        <button id="gold-btn">点击金币</button>
+    </div>
+
+    <div id="buildings">
+        <h2>建筑</h2>
+        <button onclick="upgradeBuilding('小屋')">升级小屋</button>
+        <p>等级: <span id="houseLevel">1</span></p>
+    </div>
+
+    <div id="pets">
+        <h2>宠物</h2>
+        <button onclick="recruitPet('小龙')">招募小龙</button>
+        <p>宠物数: <span id="petCount">0</span></p>
+    </div>
+
+    <div id="army">
+        <h2>军队</h2>
+        <button onclick="recruitSoldier('士兵')">招募士兵</button>
+        <p>士兵数: <span id="soldierCount">0</span></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
